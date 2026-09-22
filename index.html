@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CP code — Sites únicos para negócios únicos</title>
+<meta name="description" content="A CP code cria sites à medida para restaurantes, clínicas, lojas, hotéis e qualquer estabelecimento que queira destacar-se online. Design único, código limpo, resultados reais.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <img src="assets/logo-mark-white.png" alt="CP code" class="nav-logo-mark">
+      <span class="nav-logo-text">CP <em>code</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio" class="pixel-link"><span class="dot"></span>INÍCIO</a>
+      <a href="#servicos" class="pixel-link"><span class="dot"></span>SERVIÇOS</a>
+      <a href="#processo" class="pixel-link"><span class="dot"></span>PROCESSO</a>
+      <a href="#setores" class="pixel-link"><span class="dot"></span>SETORES</a>
+      <a href="#contato" class="pixel-link"><span class="dot"></span>CONTATO</a>
+    </nav>
+
+    <a href="https://wa.me/5583991851957?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank" rel="noopener" class="btn btn-filled nav-cta">PEDIR ORÇAMENTO</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <canvas class="hero-map" id="heroMap"></canvas>
+    <div class="hero-glow" id="heroGlow"></div>
+
+    <div class="hero-globe-wrap" id="heroGlobe">
+      <div class="hero-globe-glow"></div>
+      <div class="hero-globe-orbit orbit-1"></div>
+      <div class="hero-globe-orbit orbit-2"></div>
+
+      <div class="orbit-track track-1"><span class="orbit-dot dot-lime"></span></div>
+      <div class="orbit-track track-2"><span class="orbit-dot dot-orchid"></span></div>
+
+      <div class="globe-stage">
+        <div class="globe-shadow"></div>
+        <img src="assets/logo-mark-white.png" alt="CP code" class="globe-logo">
+      </div>
+    </div>
+
+    <div class="container hero-content">
+      <span class="eyebrow" data-reveal><span class="dot dot-blue"></span>AGÊNCIA DE SITES À MEDIDA</span>
+      <h1 class="hero-title" data-reveal>
+        Sites que parecem<br>
+        feitos só para <span class="text-accent">o seu negócio.</span><br>
+        Porque são.
+      </h1>
+      <p class="hero-sub" data-reveal>
+        A CP code desenha e desenvolve sites únicos para restaurantes, clínicas,
+        lojas, hotéis e qualquer estabelecimento que queira destacar-se online —
+        sem templates genéricos, sem copiar e colar.
+      </p>
+      <div class="hero-actions" data-reveal>
+        <a href="#contato" class="btn btn-filled">COMEÇAR PROJETO</a>
+        <a href="#setores" class="btn btn-outline">VER SETORES <span class="arrow">→</span></a>
+      </div>
+      <p class="hero-note" data-reveal>Sem mensalidades escondidas · Design 100% original · Feito no Brasil</p>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="band">
+    <div class="container band-inner">
+      <div class="stat">
+        <span class="stat-number" data-count="50" data-suffix="+">0</span>
+        <span class="stat-label">Projetos desenhados</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-count="12" data-suffix="">0</span>
+        <span class="stat-label">Setores diferentes</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-count="100" data-suffix="%">0</span>
+        <span class="stat-label">Feito à medida</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-count="14" data-suffix=" dias">0</span>
+        <span class="stat-label">Prazo médio de entrega</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <section class="ticker-section">
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span class="ticker-item pixel-tag">RESTAURANTES</span>
+        <span class="ticker-item pixel-tag">CLÍNICAS</span>
+        <span class="ticker-item pixel-tag">HOTÉIS &amp; ALOJAMENTO</span>
+        <span class="ticker-item pixel-tag">LOJAS &amp; RETAIL</span>
+        <span class="ticker-item pixel-tag">SALÕES DE BELEZA</span>
+        <span class="ticker-item pixel-tag">ESTÚDIOS CRIATIVOS</span>
+        <span class="ticker-item pixel-tag">ACADEMIAS</span>
+        <span class="ticker-item pixel-tag">ADVOGADOS</span>
+        <span class="ticker-item pixel-tag">IMOBILIÁRIAS</span>
+        <span class="ticker-item pixel-tag">EVENTOS</span>
+        <!-- duplicate for seamless loop -->
+        <span class="ticker-item pixel-tag">RESTAURANTES</span>
+        <span class="ticker-item pixel-tag">CLÍNICAS</span>
+        <span class="ticker-item pixel-tag">HOTÉIS &amp; ALOJAMENTO</span>
+        <span class="ticker-item pixel-tag">LOJAS &amp; RETAIL</span>
+        <span class="ticker-item pixel-tag">SALÕES DE BELEZA</span>
+        <span class="ticker-item pixel-tag">ESTÚDIOS CRIATIVOS</span>
+        <span class="ticker-item pixel-tag">ACADEMIAS</span>
+        <span class="ticker-item pixel-tag">ADVOGADOS</span>
+        <span class="ticker-item pixel-tag">IMOBILIÁRIAS</span>
+        <span class="ticker-item pixel-tag">EVENTOS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="pixel-tag section-tag"><span class="dot dot-blue"></span>PORQUÊ A CP CODE</span>
+        <h2 class="section-title">Sites feitos para o seu setor, não para um molde</h2>
+        <p class="section-sub">Cada projeto nasce do zero, pensado para o negócio, o cliente e o objetivo certos.</p>
+      </div>
+
+      <div class="grid-4">
+        <div class="card" data-reveal>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l1.9 5.8H20l-4.9 3.6 1.9 5.8L12 14.6 6.9 18.2l1.9-5.8L4 8.6h6.1L12 3z"/></svg>
+          </div>
+          <h3 class="card-title">Design 100% único</h3>
+          <p class="card-text">Nada de templates reciclados. Cada site é desenhado à volta da identidade visual e da história do seu negócio.</p>
+        </div>
+
+        <div class="card" data-reveal>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 6L2 12l6 6M16 6l6 6-6 6M14 4l-4 16"/></svg>
+          </div>
+          <h3 class="card-title">Código à medida</h3>
+          <p class="card-text">Desenvolvido com tecnologia moderna, leve e rápida — sem page builders pesados a travar o seu site.</p>
+        </div>
+
+        <div class="card" data-reveal>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+          </div>
+          <h3 class="card-title">Feito para converter</h3>
+          <p class="card-text">Estrutura e copy pensadas para transformar visitas em reservas, marcações ou vendas reais.</p>
+        </div>
+
+        <div class="card" data-reveal>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 17l6-6 4 4 8-9M21 6h-5v5"/></svg>
+          </div>
+          <h3 class="card-title">Cresce consigo</h3>
+          <p class="card-text">SEO, performance e escalabilidade desde o primeiro dia, para acompanhar o crescimento do negócio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPLIT CONTENT -->
+  <section class="split" id="split">
+    <div class="container split-inner">
+      <div class="split-text" data-reveal>
+        <span class="pixel-tag section-tag"><span class="dot dot-blue"></span>UMA ABORDAGEM POR SETOR</span>
+        <h2 class="split-title">Cada estabelecimento é diferente. O site também devia ser.</h2>
+        <p class="split-body">
+          Um restaurante não precisa do mesmo site que uma clínica. Uma loja não vende
+          como um estúdio de tatuagens. Por isso começamos sempre pelo setor: como o
+          cliente decide, o que o convence, o que o afasta — e só depois desenhamos.
+        </p>
+        <a href="#contato" class="btn btn-outline">FALAR SOBRE O MEU PROJETO <span class="arrow">→</span></a>
+      </div>
+
+      <div class="split-visual" id="splitVisual" data-reveal>
+        <div class="float-card fc-1">
+          <div class="fc-dot fc-dot-blue"></div>
+          <span class="fc-label">Restaurante</span>
+          <div class="fc-bars"><i></i><i></i><i></i></div>
+        </div>
+        <div class="float-card fc-2">
+          <div class="fc-dot fc-dot-lime"></div>
+          <span class="fc-label">Clínica</span>
+          <div class="fc-bars"><i></i><i></i><i></i></div>
+        </div>
+        <div class="float-card fc-3">
+          <div class="fc-dot fc-dot-orchid"></div>
+          <span class="fc-label">Loja</span>
+          <div class="fc-bars"><i></i><i></i><i></i></div>
+        </div>
+        <div class="float-card fc-4">
+          <div class="fc-dot fc-dot-blue"></div>
+          <span class="fc-label">Hotel</span>
+          <div class="fc-bars"><i></i><i></i><i></i></div>
+        </div>
+        <div class="split-grid-bg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="processo">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="pixel-tag section-tag"><span class="dot dot-blue"></span>COMO FUNCIONA</span>
+        <h2 class="section-title">Do primeiro contato ao site no ar</h2>
+        <p class="section-sub">Um processo simples e transparente, sem surpresas pelo caminho.</p>
+      </div>
+
+      <div class="process" id="processTrack">
+        <svg class="process-line" id="processLine" viewBox="0 0 1200 2" preserveAspectRatio="none">
+          <line x1="0" y1="1" x2="1200" y2="1" />
+        </svg>
+
+        <div class="process-step" data-reveal>
+          <span class="process-num">01</span>
+          <h3 class="process-title">Descoberta</h3>
+          <p class="process-text">Conversamos sobre o seu negócio, objetivos e público para definir a estratégia certa.</p>
+        </div>
+        <div class="process-step" data-reveal>
+          <span class="process-num">02</span>
+          <h3 class="process-title">Design</h3>
+          <p class="process-text">Criamos um design único, alinhado com a identidade e o setor do seu negócio.</p>
+        </div>
+        <div class="process-step" data-reveal>
+          <span class="process-num">03</span>
+          <h3 class="process-title">Desenvolvimento</h3>
+          <p class="process-text">Construímos o site com código limpo, rápido e responsivo em qualquer dispositivo.</p>
+        </div>
+        <div class="process-step" data-reveal>
+          <span class="process-num">04</span>
+          <h3 class="process-title">Lançamento</h3>
+          <p class="process-text">Testamos tudo, lançamos o site e acompanhamos os primeiros resultados consigo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS / SHOWCASE -->
+  <section class="section section-alt" id="setores">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="pixel-tag section-tag"><span class="dot dot-blue"></span>SETORES</span>
+        <h2 class="section-title">Feito para todo o tipo de negócio</h2>
+        <p class="section-sub">De restaurantes a clínicas, cada conceito é construído à medida do setor e da marca.</p>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="mock-card" data-reveal>
+          <div class="mock-browser">
+            <div class="mock-topbar"><span></span><span></span><span></span></div>
+            <div class="mock-screen mock-theme-1">
+              <div class="mock-nav"></div>
+              <div class="mock-hero"><div class="mock-line w60"></div><div class="mock-line w40"></div></div>
+              <div class="mock-row"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div>
+            </div>
+          </div>
+          <h3 class="mock-title">Restaurante &amp; Café</h3>
+          <p class="mock-text">Menus apetitosos, reservas simples e uma primeira impressão irresistível.</p>
+        </div>
+
+        <div class="mock-card" data-reveal>
+          <div class="mock-browser">
+            <div class="mock-topbar"><span></span><span></span><span></span></div>
+            <div class="mock-screen mock-theme-2">
+              <div class="mock-nav"></div>
+              <div class="mock-hero"><div class="mock-line w60"></div><div class="mock-line w40"></div></div>
+              <div class="mock-row"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div>
+            </div>
+          </div>
+          <h3 class="mock-title">Clínica &amp; Saúde</h3>
+          <p class="mock-text">Confiança, clareza e marcação de consultas sem fricção.</p>
+        </div>
+
+        <div class="mock-card" data-reveal>
+          <div class="mock-browser">
+            <div class="mock-topbar"><span></span><span></span><span></span></div>
+            <div class="mock-screen mock-theme-3">
+              <div class="mock-nav"></div>
+              <div class="mock-hero"><div class="mock-line w60"></div><div class="mock-line w40"></div></div>
+              <div class="mock-row"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div>
+            </div>
+          </div>
+          <h3 class="mock-title">Loja &amp; Retail</h3>
+          <p class="mock-text">Vitrine digital que mostra produto e leva à compra ou visita à loja.</p>
+        </div>
+
+        <div class="mock-card" data-reveal>
+          <div class="mock-browser">
+            <div class="mock-topbar"><span></span><span></span><span></span></div>
+            <div class="mock-screen mock-theme-4">
+              <div class="mock-nav"></div>
+              <div class="mock-hero"><div class="mock-line w60"></div><div class="mock-line w40"></div></div>
+              <div class="mock-row"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div>
+            </div>
+          </div>
+          <h3 class="mock-title">Hotel &amp; Alojamento</h3>
+          <p class="mock-text">Galerias imersivas e reservas diretas, sem depender só de plataformas externas.</p>
+        </div>
+
+        <div class="mock-card" data-reveal>
+          <div class="mock-browser">
+            <div class="mock-topbar"><span></span><span></span><span></span></div>
+            <div class="mock-screen mock-theme-5">
+              <div class="mock-nav"></div>
+              <div class="mock-hero"><div class="mock-line w60"></div><div class="mock-line w40"></div></div>
+              <div class="mock-row"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div>
+            </div>
+          </div>
+          <h3 class="mock-title">Estúdio Criativo</h3>
+          <p class="mock-text">Portefólio visual forte para tatuagem, fotografia, design ou arte.</p>
+        </div>
+
+        <div class="mock-card" data-reveal>
+          <div class="mock-browser">
+            <div class="mock-topbar"><span></span><span></span><span></span></div>
+            <div class="mock-screen mock-theme-6">
+              <div class="mock-nav"></div>
+              <div class="mock-hero"><div class="mock-line w60"></div><div class="mock-line w40"></div></div>
+              <div class="mock-row"><div class="mock-chip"></div><div class="mock-chip"></div><div class="mock-chip"></div></div>
+            </div>
+          </div>
+          <h3 class="mock-title">Academia &amp; Fitness</h3>
+          <p class="mock-text">Energia, planos e inscrições em poucos cliques.</p>
+        </div>
+
+      </div>
+
+      <p class="sector-note" data-reveal>Não encontrou o seu setor? Trabalhamos com qualquer tipo de estabelecimento — fale conosco.</p>
+    </div>
+  </section>
+
+  <!-- QUOTE BAND -->
+  <section class="band band-quote">
+    <div class="container">
+      <p class="quote-text" data-reveal>
+        "O seu site não é uma despesa. É o primeiro vendedor do seu negócio — a trabalhar 24 horas por dia."
+      </p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-section" id="contato">
+    <canvas class="hero-map cta-map" id="ctaMap"></canvas>
+    <div class="container cta-inner">
+      <span class="pixel-tag section-tag" data-reveal><span class="dot dot-lime"></span>VAMOS COMEÇAR</span>
+      <h2 class="cta-title" data-reveal>Vamos construir o site do seu negócio?</h2>
+      <p class="cta-sub" data-reveal>Conte-nos sobre o seu estabelecimento e receba uma proposta à medida, sem compromisso.</p>
+      <div class="hero-actions" data-reveal>
+        <a href="https://wa.me/5583991851957?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank" rel="noopener" class="btn btn-filled">PEDIR ORÇAMENTO</a>
+        <a href="mailto:contato@cpcode.com.br" class="btn btn-outline">ENVIAR EMAIL <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-col footer-brand">
+      <a href="#top" class="nav-logo">
+        <img src="assets/logo-mark-white.png" alt="CP code" class="nav-logo-mark">
+        <span class="nav-logo-text">CP <em>code</em></span>
+      </a>
+      <p class="footer-tagline">Sites únicos para negócios únicos.</p>
+    </div>
+
+    <div class="footer-col">
+      <span class="footer-heading pixel-tag">NAVEGAÇÃO</span>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Processo</a>
+      <a href="#setores">Setores</a>
+    </div>
+
+    <div class="footer-col">
+      <span class="footer-heading pixel-tag">CONTATO</span>
+      <a href="mailto:contato@cpcode.com.br">contato@cpcode.com.br</a>
+      <a href="https://www.instagram.com/cpcode_?stkn=anJjdXd0cGt1enM5&amp;utm_source=qr" target="_blank" rel="noopener">@cpcode_</a>
+      <span class="footer-static">Brasil · Remoto</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 CP code. Todos os direitos reservados.</span>
+    <span class="footer-signal"><span class="dot dot-lime"></span>DISPONÍVEL PARA NOVOS PROJETOS</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
